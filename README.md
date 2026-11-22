@@ -156,3 +156,7 @@ These are development requirements, not claims of implemented, tested or validat
 **Next evidence gate:** complete a permitted site survey; baseline the inspection route, operating envelope, hazards, sensor needs and measurable acceptance criteria; then close the mass/actuator budget and prepare separately labelled simulation, bench and controlled-prototype protocols.
 
 **Last reviewed:** 22 November 2026. See [representative mission PR #224](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/224) and [site-survey worksheet PR #225](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/225).
+
+## Global manufacturing engineering
+
+The product-specific [PUI89 Global Manufacturing Design Brief v1.0](docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md) defines the preliminary product envelope, candidate material families, component architecture, global human-factors requirements, extreme-environment design strategy, manufacturing transfer package, quality gates and unresolved specifications. It distinguishes proposed targets from tested or verified performance. Candidate materials and component types are not an approved BOM; exact grades, models, dimensions and tolerances remain open until engineering analysis and validation.
