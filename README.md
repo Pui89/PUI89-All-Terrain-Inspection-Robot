@@ -172,3 +172,16 @@ For international engineering, factory and worker handoff, use the controlled PU
 ## Future-Ready Technology Policy
 
 This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md). The policy requires upgradeable interfaces, evidence-based technology selection, provenance/licence review, local-first resource discipline, compatibility testing, safe fallback and controlled release scope. Technology candidates are reviewed monthly and architecture decisions quarterly. This link records policy adoption intent; it does **not** claim that model switching, hardware abstraction, sensor adapters, automated monitoring or product-level validation are already implemented.
+
+## Product-Specific Technology Upgrade Plan
+
+**Gartner 2026 alignment:** Physical AI, hybrid/AI supercomputing, Digital Provenance and AI Security. See the [canonical portfolio policy](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md).
+
+| Upgrade area | Planned sequence (not yet a capability claim) |
+|---|---|
+| Multimodal perception | Specify sensor contracts, timestamps, calibration and coordinate frames; validate each sensor stream independently before fusion. |
+| Sensor fusion | Evaluate RGB/depth/thermal/LiDAR only where justified by mission needs; measure failure/degraded modes and sensor disagreement. |
+| Navigation & quadruped robotics | Define autonomy boundaries, localisation/navigation interfaces and safe-stop behaviour; simulate first, then controlled hardware verification. |
+| Edge reliability & mission orchestration | Measure compute/power/thermal budgets; define fallback and fault reporting; permit bounded missions only with explicit human authorization and audit. |
+
+**First gate:** verified platform interfaces, sensor provenance/calibration and simulation-to-hardware test plan. **Status:** Planned roadmap only.
