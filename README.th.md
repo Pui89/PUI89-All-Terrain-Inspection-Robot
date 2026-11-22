@@ -90,3 +90,16 @@ PUI89 Sentinel เป็นหุ่นยนต์ภาคพื้นดิ�
 ## นโยบายเทคโนโลยีพร้อมรับอนาคต
 
 ผลิตภัณฑ์นี้ยึดแนวทางตาม [นโยบายเทคโนโลยีพร้อมรับอนาคตของ PUI89 v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.th.md) ซึ่งกำหนดให้ออกแบบอินเทอร์เฟซที่อัปเกรดได้ เลือกเทคโนโลยีจากหลักฐาน ตรวจสอบแหล่งที่มา/ใบอนุญาต ควบคุมทรัพยากรแบบ Local-first ทดสอบความเข้ากันได้ มีระบบสำรองที่ปลอดภัย และควบคุมขอบเขตการส่งมอบ โดยติดตามเทคโนโลยีทุกเดือนและทบทวนสถาปัตยกรรมทุกไตรมาส การเพิ่มลิงก์นี้เป็นการอ้างอิงนโยบาย ไม่ได้ยืนยันว่ามีการสลับโมเดล Hardware Abstraction, Sensor Adapter ระบบติดตามอัตโนมัติ หรือการตรวจสอบผลิตภัณฑ์แล้ว
+
+## แผนอัปเกรดเทคโนโลยีเฉพาะผลิตภัณฑ์
+
+**ความสอดคล้องกับ Gartner 2026:** Physical AI, Hybrid/AI Supercomputing, Digital Provenance และ AI Security ดู [นโยบายกลางของ PUI89](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.th.md)
+
+| ด้านที่อัปเกรด | ลำดับแผน (ยังไม่ใช่การยืนยันความสามารถ) |
+|---|---|
+| Multimodal Perception | กำหนดสัญญา Sensor, Timestamp, Calibration และ Coordinate Frame ตรวจสอบข้อมูลแต่ละเซนเซอร์แยกกันก่อนรวมข้อมูล |
+| Sensor Fusion | ประเมิน RGB/Depth/Thermal/LiDAR เฉพาะเมื่อภารกิจจำเป็น วัดโหมดล้มเหลว/เสื่อมสภาพและกรณีเซนเซอร์ให้ข้อมูลขัดแย้ง |
+| Navigation และหุ่นยนต์สี่ขา | กำหนดขอบเขต Autonomy, Localisation/Navigation Interface และ Safe Stop ทดสอบ Simulation ก่อนตรวจสอบฮาร์ดแวร์แบบควบคุม |
+| Edge Reliability และ Mission Orchestration | วัด Compute/Power/Thermal กำหนดระบบสำรองและ Failure Report อนุญาตภารกิจที่มีขอบเขตเมื่อมนุษย์อนุมัติและตรวจสอบย้อนหลังได้ |
+
+**Gate แรก:** อินเทอร์เฟซแพลตฟอร์มที่ตรวจสอบแล้ว ที่มา/Calibration ของ Sensor และแผนทดสอบ Simulation-to-Hardware **สถานะ:** แผนที่เสนอเท่านั้น
