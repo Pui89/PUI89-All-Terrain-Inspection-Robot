@@ -140,3 +140,19 @@ Battery runtime, chemistry, capacity, cycle life, charging performance and safet
 **Product-specific offline baseline:** Physical local operator controls, local stop/emergency stop, local status/fault indication and safe shutdown. A supervised inspection task may continue only if the approved mission risk assessment, onboard sensing and local operator control permit it. On remote-link loss, use the validated mission-specific response (controlled stop, hold, or a verified safe-point procedure); do not assume return-to-home is always safe. No unattended hazardous movement or remote safety override.
 
 These are development requirements, not claims of implemented, tested or validated capability.
+
+
+## Latest engineering progress — 22 November 2026
+
+**Maturity:** Specified — product and engineering requirements are documented. **Evidence status:** PARTIAL. No physical robot or field capability is established.
+
+**Recent verified repository progress:**
+- Merged the representative warehouse inspection mission profile (PR #224), defining a concrete first inspection use case.
+- Added and linked the Sentinel geometry specification and joint-load-case matrix as engineering inputs.
+- A warehouse site-survey and measurement worksheet is proposed in PR #225; it is not treated as completed site evidence while that PR remains unmerged.
+
+**Not established:** a built quadruped, integrated sensor suite, validated gait or terrain traversal, measured durability, actuator performance, or field safety.
+
+**Next evidence gate:** complete a permitted site survey; baseline the inspection route, operating envelope, hazards, sensor needs and measurable acceptance criteria; then close the mass/actuator budget and prepare separately labelled simulation, bench and controlled-prototype protocols.
+
+**Last reviewed:** 22 November 2026. See [representative mission PR #224](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/224) and [site-survey worksheet PR #225](https://github.com/Pui89/PUI89-All-Terrain-Inspection-Robot/pull/225).
