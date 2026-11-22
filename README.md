@@ -168,3 +168,34 @@ For international engineering, factory and worker handoff, use the controlled PU
 - [PUI89 Global Manufacturing Handoff System v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md)
 
 **Production rule:** Build, buy, substitute, inspect or release only against the exact approved product configuration, revision, drawing, BOM and work instruction. Missing or conflicting values are **STOP — DO NOT GUESS**; raise a Technical Query (TQ). The shared blank manufacturing templates are being reviewed in [PUI89 website PR #639](https://github.com/Pui89/Pui89.github.io/pull/639) and are not yet production authority.
+
+## Future-Ready Technology Policy
+
+This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md). The policy requires upgradeable interfaces, evidence-based technology selection, provenance/licence review, local-first resource discipline, compatibility testing, safe fallback and controlled release scope. Technology candidates are reviewed monthly and architecture decisions quarterly. This link records policy adoption intent; it does **not** claim that model switching, hardware abstraction, sensor adapters, automated monitoring or product-level validation are already implemented.
+
+## Product-Specific Technology Upgrade Plan
+
+**Gartner 2026 alignment:** Physical AI, hybrid/AI supercomputing, Digital Provenance and AI Security. See the [canonical portfolio policy](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md).
+
+| Upgrade area | Planned sequence (not yet a capability claim) |
+|---|---|
+| Multimodal perception | Specify sensor contracts, timestamps, calibration and coordinate frames; validate each sensor stream independently before fusion. |
+| Sensor fusion | Evaluate RGB/depth/thermal/LiDAR only where justified by mission needs; measure failure/degraded modes and sensor disagreement. |
+| Navigation & quadruped robotics | Define autonomy boundaries, localisation/navigation interfaces and safe-stop behaviour; simulate first, then controlled hardware verification. |
+| Edge reliability & mission orchestration | Measure compute/power/thermal budgets; define fallback and fault reporting; permit bounded missions only with explicit human authorization and audit. |
+
+**First gate:** verified platform interfaces, sensor provenance/calibration and simulation-to-hardware test plan. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Specify sensor/time/coordinate contracts, calibration records, modular perception interfaces, mission boundaries and safe-stop requirements. |
+| 2028 | Evaluate sensor fusion and semantic mapping in simulation and controlled trials; add depth, thermal or ranging sensors only when mission evidence supports them. |
+| 2029 | Explore adaptive inspection, robust localisation, degraded-mode autonomy and coordinated multi-robot/fleet concepts under explicit human authorization. |
+| 2030+ | Support replaceable compute, sensor and navigation modules with regression-tested upgrades, auditable mission records and product-specific safety envelopes. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
