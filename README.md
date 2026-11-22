@@ -185,3 +185,17 @@ This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1
 | Edge reliability & mission orchestration | Measure compute/power/thermal budgets; define fallback and fault reporting; permit bounded missions only with explicit human authorization and audit. |
 
 **First gate:** verified platform interfaces, sensor provenance/calibration and simulation-to-hardware test plan. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Specify sensor/time/coordinate contracts, calibration records, modular perception interfaces, mission boundaries and safe-stop requirements. |
+| 2028 | Evaluate sensor fusion and semantic mapping in simulation and controlled trials; add depth, thermal or ranging sensors only when mission evidence supports them. |
+| 2029 | Explore adaptive inspection, robust localisation, degraded-mode autonomy and coordinated multi-robot/fleet concepts under explicit human authorization. |
+| 2030+ | Support replaceable compute, sensor and navigation modules with regression-tested upgrades, auditable mission records and product-specific safety envelopes. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
