@@ -9,3 +9,7 @@ This repository is retained as a historical record only. Its contents are not an
 The active PUI89 portfolio is maintained in the [PUI89 website](https://pui89.github.io/) and the current [Portfolio Source of Truth](https://pui89.github.io/docs/PUI89_PORTFOLIO_SOURCE_OF_TRUTH_V1.3.md). Shared AI Core remains common infrastructure for the remaining active products and is not affected by this retirement.
 
 Historical Git history is preserved for traceability. This archive notice does not represent deletion of the repository or its history.
+
+## Historical records — archived, not active
+
+The following files remain only as historical records and are **not validated current product requirements**: `docs/COMPLETE_SYSTEM_BLUEPRINT.md`, `docs/VALIDATION_MATRIX.md`, and `docs/images/pui89-sentinel-quadruped-inspection-v3.svg`. Any historical material requires independent human review and must not be used to restart product work.
