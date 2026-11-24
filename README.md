@@ -1,5 +1,7 @@
 # PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
 
+**ภาษาไทย:** [อ่าน README ภาษาไทย](README.th.md)
+
 ## Product and AI system update — 18 November 2026
 
 **Public product summary (EN):** PUI89 Sentinel is a four-legged, dog-shaped, ground-based exploration and inspection robot concept. It is intended for supervised reconnaissance in factories, industrial infrastructure, selected rough outdoor areas, disaster sites and difficult-access spaces after site clearance.
