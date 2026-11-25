@@ -266,3 +266,10 @@ A reproducible inspection-perception benchmark/protocol and a reliability-aware 
 ### 8. Safety, ethics and publication gates
 
 Sentinel remains a **human-supervised four-legged inspection robot**. Narcotics screening, X-ray screening, chemical identification and enforcement are outside scope. Do not infer that an environment is safe to enter from RGB, depth or LiDAR alone. Require site-specific hazard assessment and appropriate certified instruments where needed. No gait, terrain traversal, physical integration or field performance is claimed until separately tested. Protect site-sensitive data and obtain permissions. Q1 publication is a target, not a guarantee.
+
+## 360° Intelligence
+
+The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines supervised quadruped surround perception for authorised industrial, infrastructure, logistics and selected outdoor inspection missions. It covers body-frame sectors, leg/foot and payload occlusion, terrain cues, sensor synchronisation, localisation evidence, and human-reviewed inspection records.
+
+**Scope clarification:** Sentinel is the All-Terrain Exploration & Inspection Robot Dog. Narcotics detection, X-ray screening, X-ray/narcotics datasets, related forensic spectra, chemical identification and enforcement are excluded. **Status: Proposed**; no integrated 360° sensor suite or physical field validation is established.
+
