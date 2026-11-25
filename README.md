@@ -199,3 +199,70 @@ This forward-looking roadmap extends the current P1–P4 development sequence be
 | 2030+ | Support replaceable compute, sensor and navigation modules with regression-tested upgrades, auditable mission records and product-specific safety envelopes. |
 
 **Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
+
+
+---
+
+## Academic Research Direction — Q1-Targeted Study (Proposed)
+
+**Research topic:** Uncertainty-Aware Multimodal AI for Quadruped Environmental Inspection  
+**Working manuscript title:** *Reliability-Aware Multimodal Perception and Terrain-Condition Assessment for Human-Supervised Quadruped Inspection*
+
+**Status:** Proposed research direction for academic review. Novelty and feasibility require a systematic literature review and a defined inspection mission. No physical robot, sensor integration or field performance is claimed.
+
+### 1. Problem and motivation
+
+A quadruped inspection platform may encounter changing terrain, poor illumination, occlusion, dust, reflective surfaces and unreliable or unavailable sensors. A perception system that produces a confident output despite degraded evidence can mislead an operator. The research will study how sensor reliability, terrain understanding and uncertainty-aware human review can improve inspection evidence quality.
+
+### 2. Research gap to verify
+
+- Whether sensor-quality-aware fusion outperforms fixed fusion when modalities are missing, stale or degraded.
+- How uncertainty should affect terrain and inspection-event interpretation.
+- How to preserve traceable links between observations, sensor health, location and operator-reviewed findings.
+- Whether results generalise across sites and terrain conditions rather than one controlled route.
+
+### 3. Research questions and hypotheses
+
+- **RQ1:** Does reliability-aware multimodal fusion improve terrain-condition and inspection-cue assessment over single-sensor and fixed-fusion baselines?
+- **RQ2:** Can modality-quality estimation detect when a sensor should be down-weighted or excluded?
+- **RQ3:** Does uncertainty-aware abstention reduce unsupported inspection conclusions?
+- **H1:** Quality-aware fusion will improve robustness under controlled sensor degradation compared with fixed fusion.
+- **H2:** Explicit unknown/abstention states will reduce overconfident errors under missing or conflicting sensor evidence.
+
+### 4. Proposed hybrid-AI method and workflow
+
+1. Define one authorised, human-supervised inspection mission and its hazard envelope.
+2. Collect time-synchronised RGB, depth and/or LiDAR observations; include thermal or other modalities only if available and justified.
+3. Run specialist models for terrain segmentation, obstacle detection and selected anomaly cues.
+4. Estimate per-modality freshness, calibration, noise and quality.
+5. Compare early, late and quality-aware fusion; use a VLM only for evidence-grounded semantic summaries, never as an unverified sensor substitute.
+6. Attach location, timestamp, sensor status, model version and uncertainty to each inspection record.
+7. Present recommendations to an operator; retain human authority over movement and mission continuation.
+
+### 5. Candidate datasets and data collection
+
+- **Original data is essential:** authorised, synchronised quadruped inspection sequences with terrain labels, sensor-health metadata, robot pose and operator-reviewed inspection events.
+- Candidate transferable benchmarks include **RELLIS-3D** for off-road scene understanding, **SemanticKITTI** for LiDAR semantics, **OpenLORIS-Scene** for long-term RGB-D perception and **TartanAir** for simulation-based visual robustness.
+- These datasets are not equivalent to a validated quadruped inspection benchmark. Their modality coverage, origin, licence and suitability must be checked before use.
+- Use synthetic modality dropout/noise only as a controlled robustness experiment, clearly separated from real field evidence.
+
+### 6. Experimental design
+
+- **Baselines:** RGB-only specialist model; geometry-only baseline where applicable; conventional early/late fusion; proposed quality-aware fusion.
+- **E1:** modality ablation and complementary-sensor contribution.
+- **E2:** missing, stale, noisy, misaligned and degraded sensor conditions.
+- **E3:** terrain classes, slopes, uneven surfaces, shadows, glare and occlusion.
+- **E4:** uncertainty calibration, abstention and operator-review workload.
+- **E5:** held-out site/route and repeated-session generalisation.
+- **E6:** inference latency, memory and power/energy only where measured on declared hardware.
+
+**Primary outcomes:** pre-register terrain/inspection event macro-F1 or event-level recall at a defined false-alarm rate.  
+**Secondary outcomes:** localisation error, false-safe/false-hazard rates, calibration, abstention coverage, evidence completeness, latency and resource use.
+
+### 7. Expected scientific contribution
+
+A reproducible inspection-perception benchmark/protocol and a reliability-aware multimodal fusion method that explicitly models sensor quality, uncertainty and human review for quadruped environmental inspection.
+
+### 8. Safety, ethics and publication gates
+
+Sentinel remains a **human-supervised four-legged inspection robot**. Narcotics screening, X-ray screening, chemical identification and enforcement are outside scope. Do not infer that an environment is safe to enter from RGB, depth or LiDAR alone. Require site-specific hazard assessment and appropriate certified instruments where needed. No gait, terrain traversal, physical integration or field performance is claimed until separately tested. Protect site-sensitive data and obtain permissions. Q1 publication is a target, not a guarantee.
