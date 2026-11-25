@@ -1,6 +1,6 @@
-# PUI89 Sentinel — 360° Intelligence Profile v1.0
+# PUI89 Sentinel — All-Terrain Inspection Robot Dog — 360° Intelligence Profile v1.0
 
-**Official identity:** PUI89 Sentinel — All-Terrain Exploration & Inspection Robot  
+**Official identity:** PUI89 Sentinel — All-Terrain Inspection Robot Dog  
 **Platform:** Human-supervised four-legged quadruped  
 **Status:** Proposed product-specific requirements; no integrated 360° sensor suite or physical field validation is established.
 
