@@ -1,4 +1,4 @@
-# PUI89 Sentinel — All-Terrain Exploration & Inspection Robot
+# PUI89 Sentinel — All-Terrain Inspection Robot Dog
 
 [English](README.md) · [ภาษาไทย](README.th.md)
 
