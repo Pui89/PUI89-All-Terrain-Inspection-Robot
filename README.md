@@ -273,3 +273,7 @@ The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE
 
 **Scope clarification:** Sentinel is the All-Terrain Exploration & Inspection Robot Dog. Narcotics detection, X-ray screening, X-ray/narcotics datasets, related forensic spectra, chemical identification and enforcement are excluded. **Status: Proposed**; no integrated 360° sensor suite or physical field validation is established.
 
+
+
+## Hybrid End-to-End Multimodal AI
+[PUI89 Hybrid End-to-End AI Product Adapter v1.0](docs/architecture/PUI89_HYBRID_END_TO_END_AI_ADAPTER_V1.0.md) — proposed architecture and project-specific adoption plan. E2E benefits require comparative evidence; product boundaries, independent safety and evidence gates remain mandatory.
