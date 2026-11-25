@@ -11,6 +11,16 @@
 
 *Concept illustration only. It is not evidence of a built, integrated, tested or validated robot.*
 
+## Image Evidence & Licensing Standard
+
+**Real-world reference:** cite photographs of commercial quadruped robots, industrial inspection sensors, rugged terrain and authorised inspection settings. These references demonstrate existing technologies or environments only; they do not establish PUI89 hardware capability.
+
+**PUI89 concept image:** the project illustration in this repository is a proposed four-legged inspection robot design. It is not a built or validated robot.
+
+**Evidence caption:** label every image as *Real-world reference*, *PUI89 concept*, *simulation* or *verified test evidence*. State exactly what the image proves. Do not present third-party equipment as PUI89 equipment, or a concept render as a test result.
+
+**Image source & licence:** prefer [Wikimedia Commons](https://commons.wikimedia.org/) and [Pexels](https://www.pexels.com/). Record the original page, creator, asset URL, licence, attribution text, access date and any modifications. Check each file's individual licence and commercial-use/derivative conditions before reuse; a platform link alone is not proof of permission.
+
 ## What this product is
 
 PUI89 Sentinel is a **four-legged ground robot** intended for human-supervised inspection in authorised industrial, infrastructure, logistics and selected outdoor environments. Its mission is to help operators observe difficult-to-access areas and collect traceable evidence while the human operator retains authority.
