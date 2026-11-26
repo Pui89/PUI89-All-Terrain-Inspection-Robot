@@ -319,3 +319,10 @@ See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://g
 Sentinel field behavior: use onboard maps/models and sensors only where implemented and validated. If localization, terrain perception or energy reserve becomes unreliable, stop in a safe state and request recovery; do not continue blindly or promise a return route.
 
 When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+Use cameras for local inspection, obstacle/environment awareness and post-fall scene review, subject to validated sensor fusion. After a fall or impact, stop motion, inspect posture and surroundings; self-right only if the mechanism and maneuver are validated. Otherwise request manual recovery.
