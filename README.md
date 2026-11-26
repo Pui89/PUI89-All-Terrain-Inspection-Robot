@@ -283,3 +283,8 @@ The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE
 
 **Scope clarification:** Sentinel is the All-Terrain Exploration & Inspection Robot Dog. Narcotics detection, X-ray screening, X-ray/narcotics datasets, related forensic spectra, chemical identification and enforcement are excluded. **Status: Proposed**; no integrated 360° sensor suite or physical field validation is established.
 
+
+
+## Environmental, Material & Safety Qualification
+
+This product follows the [PUI89 Six-Product Environmental, Material & Safety Qualification Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md). Sentinel-specific candidate requirements cover protected electronics, separately assessed joints/actuators/connectors, mud and dust ingress, impact/vibration, replaceable abrasion-resistant foot pads, cable strain relief, corrosion and battery thermal safety. All ratings and material choices are proposed only; no product-level IP rating or terrain/weather validation is claimed.
