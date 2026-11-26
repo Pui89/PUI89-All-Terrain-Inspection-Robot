@@ -295,3 +295,18 @@ This product follows the [PUI89 Six-Product Environmental, Material & Safety Qua
 **Status: Proposed / Not implemented / Not tested.** Vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: a body-mounted IMU, with optional accelerometers on selected leg/actuator modules after design review. Analyse gait/footfall patterns, abnormal joint/actuator vibration and impact/fall evidence while accounting for terrain.
 
 The product console must separately show: **Hardware** (sensor present/type/location/connection/calibration); **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality); **AI/Analytics** (anomaly/trend model and confidence); **Integration** (module mapping and maintenance workflow); and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Use explicit Not installed, No live data, Not tested and TBD states. Never fabricate live vibration values or show healthy status without sensor data. Sensor model, range, bandwidth, sampling, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the shared [six-product vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).
+
+
+## Local Product Console — Proposed
+
+**Status: Proposed / Not implemented / Not tested.** No physical Sentinel console, selected display hardware or live robot-console integration is established.
+
+The product-specific console is intended to support local mission setup, robot readiness, locomotion state, perception and sensor health, battery/power status, terrain and obstacle warnings, fault review, operator-approved mission actions and safe-stop confirmation.
+
+- Operate locally without requiring a phone application, remote-control service, cloud account or internet for essential functions.
+- Show actual sensor measurements, AI interpretations, uncertainty, stale/missing inputs and faults as distinct states.
+- Provide a physical, independently wired emergency-stop path and a safety controller appropriate to the mobile robot's hazard analysis. A touchscreen stop or shutdown control is not an emergency stop.
+- The robot must reach a defined safe state if the console freezes, AI fails, communications are lost or required sensor data becomes invalid.
+- Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
+
+See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). This profile is a proposed requirement, not evidence of a functioning robot or console.
