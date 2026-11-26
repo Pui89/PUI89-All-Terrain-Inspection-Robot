@@ -236,3 +236,10 @@ Console เฉพาะ Sentinel มีเป้าหมายรองรั�
 การทำงานภาคสนามของ Sentinel: ใช้แผนที่ โมเดล และเซนเซอร์บนตัวหุ่นยนต์เฉพาะส่วนที่พัฒนาและตรวจสอบแล้ว หากระบุตำแหน่ง รับรู้ภูมิประเทศ หรือประเมินพลังงานสำรองไม่น่าเชื่อถือ ให้หยุดใน Safe State และขอการกู้คืน ห้ามเดินหน้าต่อโดยไม่รู้สถานการณ์หรือรับประกันเส้นทางกลับ
 
 เมื่อข้อมูลขาดหาย เก่า ขัดแย้ง หรือไม่น่าเชื่อถือ ให้แสดงเหตุผลและงดการกระทำที่ได้รับผลกระทบ ใช้เฉพาะข้อมูลและความสามารถภายในเครื่องที่ตรวจสอบแล้ว หากความปลอดภัย ความมั่นใจของเส้นทาง หรือพลังงานสำรองไม่เพียงพอ ให้เข้าสู่ SAFE STOP / NEED HELP แทนการคาดเดา คำว่า “Offline capable” ไม่ได้หมายถึงรับประกันการทำงานได้ในทุกพื้นที่ห่างไกล ป่า ใต้ดิน หรือพื้นที่ภาคสนามลึก
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+ใช้กล้องตรวจพื้นที่ รับรู้สิ่งกีดขวาง/สภาพแวดล้อม และตรวจดูหลังล้ม โดยต้องผ่านการตรวจสอบการทำงานร่วมกับเซนเซอร์อื่น หลังล้มหรือชนให้หยุด ตรวจท่าทางและบริเวณรอบตัว พลิกตัวเองได้เฉพาะเมื่อกลไกและวิธีการผ่านการทดสอบแล้ว มิฉะนั้นให้ขอการกู้คืนด้วยมือ
