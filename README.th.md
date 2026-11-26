@@ -200,3 +200,15 @@ Sentinel ยังคงเป็นหุ่นยนต์สี่ขาส�
 
 **ยืนยันขอบเขต:** Sentinel คือหุ่นยนต์สี่ขาสำหรับสำรวจและตรวจสอบ ไม่ใช่ระบบคัดกรองสารเสพติด โดยไม่รวมการตรวจจับ/คัดกรองสารเสพติด การตรวจด้วย X-ray ชุดข้อมูล X-ray/สารเสพติด สเปกตรัมทางนิติวิทยาศาสตร์ที่เกี่ยวข้อง การระบุสารเคมี และการบังคับใช้กฎหมาย **สถานะ: Proposed** ยังไม่มีชุดเซนเซอร์ 360° ที่บูรณาการหรือผลทดสอบภาคสนามจริง
 
+
+
+## การตรวจสอบคุณสมบัติด้านสภาพแวดล้อม วัสดุ และความปลอดภัย
+
+ผลิตภัณฑ์นี้ใช้ [กรอบ PUI89 Six-Product Environmental, Material & Safety Qualification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md) ข้อกำหนดเฉพาะ Sentinel ครอบคลุมกล่องอิเล็กทรอนิกส์ ข้อต่อ/แอคชูเอเตอร์/ขั้วต่อที่ต้องประเมินแยก การป้องกันโคลนและฝุ่น แรงกระแทก/สั่นสะเทือน แผ่นรองเท้าทนการเสียดสีที่เปลี่ยนได้ การป้องกันแรงดึงสายไฟ การกัดกร่อน และความปลอดภัยความร้อนของแบตเตอรี่ ระดับการป้องกันและวัสดุทั้งหมดเป็นเพียงข้อเสนอ ยังไม่มีการกล่าวอ้างระดับ IP หรือการตรวจสอบสภาพพื้น/อากาศของผลิตภัณฑ์
+
+
+## การตรวจจับแรงสั่นสะเทือนและการแสดงผลบน Console
+
+**สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแรงสั่นต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU บนลำตัว และ Accelerometer เพิ่มที่ขา/Actuator บางจุดหลังทบทวนแบบ วิเคราะห์รูปแบบการเดิน/ลงเท้า ความผิดปกติของข้อต่อ/Actuator และหลักฐานแรงกระแทก/ล้ม โดยคำนึงถึงพื้นผิว
+
+Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) ใช้สถานะ Not installed, No live data, Not tested และ TBD ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล ต้องมีหลักฐานรุ่นเซนเซอร์ ช่วงวัด Bandwidth Sampling จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency การวินิจฉัยของ AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
