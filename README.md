@@ -310,3 +310,12 @@ The product-specific console is intended to support local mission setup, robot r
 - Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
 
 See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). This profile is a proposed requirement, not evidence of a functioning robot or console.
+
+
+## Simple Local Intelligence for Offline and Uncertain Conditions
+
+**Design requirement — not implemented or field-validated.** Keep essential functions on-device; no mandatory cloud, internet, phone app or remote control. Use energy conservatively: warn at a validated low-power threshold, shed nonessential workloads first, and preserve energy for a safe stop. Do not assume self-charging or unlimited runtime.
+
+Sentinel field behavior: use onboard maps/models and sensors only where implemented and validated. If localization, terrain perception or energy reserve becomes unreliable, stop in a safe state and request recovery; do not continue blindly or promise a return route.
+
+When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
