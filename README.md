@@ -326,3 +326,21 @@ When inputs are missing, stale, conflicting or unreliable, show the reason and a
 The canonical product identity is **PUI89 Sentinel — All-Terrain Inspection Robot Dog**: a supervised quadruped for environmental inspection, situational awareness and evidence capture. RGB, depth, thermal and 360° LiDAR are research sensor modalities/candidates, not confirmation that these sensors are purchased, installed or calibrated. All-terrain mobility, endurance and field performance remain unvalidated. Narcotics detection/screening, X-ray screening and related forensic spectra/datasets are outside current scope.
 
 The first hardware-cost estimate remains **TBD** until the supervised mission, operating envelope, quadruped base, payload, sensor configuration, exact parts, origin evidence and dated quotations are defined. See the [six-product BOM and cost framework](https://github.com/Pui89/PUI89-Research/blob/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.md).
+
+## PUI89 Product Excellence Standard
+
+**Easy to Engineer. Easy to Use. Loved by Customers.**
+
+Sentinel must be understandable to engineers and operators, straightforward to maintain, premium in construction and effective at its defined inspection mission.
+- **Engineerability:** documented modular mechanical/electrical/software interfaces, controlled drawings and BOM, accessible service points and clear diagnostics.
+- **Ease of use:** straightforward supervised mission setup, clear controls/status and operator-reviewed evidence reports.
+- **Premium quality:** refined, durable, cleanable construction and professional industrial finish.
+- **Performance:** define and test mission-specific mobility, stability, obstacle negotiation, inspection coverage, sensing quality, runtime, noise and recovery. “All-terrain” is a direction, not a guarantee for every surface.
+- **Safety:** supervised operation, defined operating envelope, emergency stop, safe-stop, loss-of-link response, hazard review and recoverability. RGB/depth/LiDAR alone cannot establish hazardous-atmosphere safety.
+- **Commercial objective:** validate industrial buyer needs, procurement, service model, lifecycle cost and positive unit economics. Profitability and best-seller potential are goals, not established results.
+
+**Customer experience goal:** operators can prepare a mission, understand observations, review uncertain findings and export traceable evidence without needing robotics expertise.
+
+**Evidence boundary:** no physical prototype, validated gait, all-terrain capability, field deployment or certification is claimed.
+
+**Mass-production gate:** document prototype verification, safety/reliability testing, manufacturing quality readiness, applicable regulatory approvals and accepted pilot production before authorization.
