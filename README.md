@@ -319,3 +319,10 @@ See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://g
 Sentinel field behavior: use onboard maps/models and sensors only where implemented and validated. If localization, terrain perception or energy reserve becomes unreliable, stop in a safe state and request recovery; do not continue blindly or promise a return route.
 
 When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Portfolio alignment update — 28 November 2026
+
+The canonical product identity is **PUI89 Sentinel — All-Terrain Inspection Robot Dog**: a supervised quadruped for environmental inspection, situational awareness and evidence capture. RGB, depth, thermal and 360° LiDAR are research sensor modalities/candidates, not confirmation that these sensors are purchased, installed or calibrated. All-terrain mobility, endurance and field performance remain unvalidated. Narcotics detection/screening, X-ray screening and related forensic spectra/datasets are outside current scope.
+
+The first hardware-cost estimate remains **TBD** until the supervised mission, operating envelope, quadruped base, payload, sensor configuration, exact parts, origin evidence and dated quotations are defined. See the [six-product BOM and cost framework](https://github.com/Pui89/PUI89-Research/blob/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.md).
